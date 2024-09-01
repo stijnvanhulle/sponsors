@@ -11,29 +11,30 @@ export default defineConfig({
   sponsorsAutoMerge: true,
   tiers: [
     {
-      title: 'Backers',
+      title: 'Support',
+      monthlyDollars: 1,
       preset: tierPresets.base,
     },
-    // {
-    //   title: 'Super Generous',
-    //   monthlyDollars: 50,
-    //   preset: tierPresets.medium,
-    // },
-    // {
-    //   title: 'Bronze Sponsors',
-    //   monthlyDollars: 100,
-    //   preset: tierPresets.large,
-    // },
-    // {
-    //   title: 'Silver Sponsors',
-    //   monthlyDollars: 250,
-    //   preset: tierPresets.xl,
-    // },
-    // {
-    //   title: 'Gold Sponsors',
-    //   monthlyDollars: 500,
-    //   preset: tierPresets.xl,
-    // },
+    {
+      title: 'Backers',
+      monthlyDollars: 5,
+      preset: tierPresets.medium,
+    },
+    {
+      title: 'Bronze Sponsors',
+      monthlyDollars: 10,
+      preset: tierPresets.large,
+    },
+    {
+      title: 'Silver Sponsors',
+      monthlyDollars: 50,
+      preset: tierPresets.xl,
+    },
+    {
+      title: 'Gold Sponsors',
+      monthlyDollars: 100,
+      preset: tierPresets.xl,
+    },
   ],
   // Run multiple renders with different configurations
   renders: [
