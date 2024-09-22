@@ -12,7 +12,6 @@ export default defineConfig({
   tiers: [
     {
       title: 'Support',
-      monthlyDollars: 1,
       preset: tierPresets.base,
     },
     {
