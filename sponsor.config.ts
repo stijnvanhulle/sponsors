@@ -52,6 +52,7 @@ export default defineConfig({
       name: 'sponsors-circles',
       width: 1000,
       includePastSponsors: true,
+
     },
   ],
 })
