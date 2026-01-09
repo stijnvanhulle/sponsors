@@ -40,7 +40,7 @@ export default defineConfig({
     {
       name: 'sponsors',
       width: 800,
-      formats: ['svg', 'png'],
+      formats: ['json', 'svg', 'png'],
     },
     {
       name: 'sponsors-wide',
