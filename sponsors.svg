@@ -15,7 +15,7 @@ text {
   font-size: 20px;
 }
 </style>
-<text x="400" y="40" text-anchor="middle" class="sponsorkit-tier-title">Backers</text><a href="https://github.com/MKM-Group-AB" class="sponsorkit-link" target="_blank" id="MKM-Group-AB">
+<text x="400" y="40" text-anchor="middle" class="sponsorkit-tier-title">Backers</text><a href="https://zendr.se" class="sponsorkit-link" target="_blank" id="MKM-Group-AB">
   <text x="200" y="133" text-anchor="middle" class="sponsorkit-name" fill="currentColor">Zendr</text>
   
   <clipPath id="cb766d3">
