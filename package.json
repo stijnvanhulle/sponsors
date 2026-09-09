@@ -8,5 +8,5 @@
   "devDependencies": {
     "sponsorkit": "^18.0.0"
   },
-  "packageManager": "pnpm@11.22.0"
+  "packageManager": "pnpm@12.4.0"
 }
