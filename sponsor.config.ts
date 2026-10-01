@@ -11,12 +11,17 @@ export default defineConfig({
   sponsorsAutoMerge: true,
   tiers: [
     {
-      title: 'Support',
+      title: 'Supporters',
       preset: tierPresets.base,
     },
     {
       title: 'Backers',
       monthlyDollars: 10,
+      preset: tierPresets.medium,
+    },
+    {
+      title: 'Contributors',
+      monthlyDollars: 25,
       preset: tierPresets.medium,
     },
     {
@@ -52,7 +57,6 @@ export default defineConfig({
       name: 'sponsors-circles',
       width: 1000,
       includePastSponsors: true,
-
     },
   ],
 })

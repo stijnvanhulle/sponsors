@@ -13,6 +13,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: update-sponsors
+  cancel-in-progress: true
+
 jobs:
   update-sponsors:
     runs-on: ubuntu-latest
@@ -33,7 +37,7 @@ jobs:
 
       - uses: EndBug/add-and-commit@v9
         with:
-          add: "sponsors.*"
+          add: "sponsors*"
           message: "chore: update sponsors"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
