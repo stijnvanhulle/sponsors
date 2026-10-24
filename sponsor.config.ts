@@ -9,8 +9,9 @@ export default defineConfig({
   width: 800,
   formats: ['json', 'svg', 'png'],
   sponsorsAutoMerge: true,
-  // Claude sponsors outside GitHub Sponsors, so add it by hand
-  onSponsorsReady: (sponsors) => [
+  // Claude sponsors outside GitHub Sponsors, so add it by hand.
+  // Use this hook, not onSponsorsReady, so sponsorkit fetches its avatar.
+  onSponsorsAllFetched: (sponsors) => [
     ...sponsors,
     {
       sponsor: {
