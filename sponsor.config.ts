@@ -9,6 +9,20 @@ export default defineConfig({
   width: 800,
   formats: ['json', 'svg', 'png'],
   sponsorsAutoMerge: true,
+  // Claude sponsors outside GitHub Sponsors, so add it by hand
+  onSponsorsReady: (sponsors) => [
+    ...sponsors,
+    {
+      sponsor: {
+        type: 'Organization',
+        login: 'anthropics',
+        name: 'Claude',
+        avatarUrl: 'https://github.com/anthropics.png',
+        linkUrl: 'https://claude.com',
+      },
+      monthlyDollars: 100,
+    },
+  ],
   tiers: [
     {
       title: 'Supporters',
